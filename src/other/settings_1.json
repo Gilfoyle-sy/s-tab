@@ -1,0 +1,270 @@
+{
+  /*
+   * color customizations
+   */
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#f58220",
+    "tab.hoverBorder": "#f47920", // 顶部选项卡-hover
+    "tab.activeBackground": "#1B541F", // 顶部选项卡-active
+    // "statusBar.foreground": "#ffffff", // 底部状态栏-字体
+    // "statusBar.background": "#1B541F", // 底部状态栏-背景
+    "list.inactiveSelectionBackground": "#1B541F" // 左侧文件树，双击的激活时的背景色
+  },
+
+  /*
+   * material theme
+   */
+  "materialTheme.accent": "Teal", // 全局 选中的颜色主题
+  "material-icon-theme.showUpdateMessage": false, // 更新后显示升级信息
+  "material-icon-theme.activeIconPack": "vue_vuex", // 隐藏左侧树状图的箭头
+  "material-icon-theme.folders.color": "#ffe304", // 文件夹颜色
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  /*
+   * font
+   */
+  "editor.fontFamily": "FiraCode-Retina, YaHei Fira Icon Hybrid", // 字体
+  "editor.fontSize": 15, // 字体大小
+  "editor.fontWeight": "500", // 字重
+  "editor.fontLigatures": true, // 连体字
+
+  /*
+   * cursor
+   */
+  "editor.cursorWidth": 10,
+  "editor.cursorStyle": "line", // 光标样式
+  "editor.cursorBlinking": "expand", // 光标闪烁样式
+  "editor.cursorSmoothCaretAnimation": true,
+
+  /*
+   * minimap
+   */
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+
+  "editor.wordWrap": "on", // 是否显示控制字符
+  "editor.showFoldingControls": "always", // 打开时，禁用自动根据tab来格式化
+  "editor.multiCursorModifier": "ctrlCmd", // command键按住后光标多选
+  "editor.codeLens": false, // 根据制表位插入或删除空格
+  "editor.smoothScrolling": true, // 编辑器平滑滚动
+  "editor.bracketPairColorization.enabled": true, // 多层级括号着色
+  "workbench.tree.indent": 18, // 左侧树状栏目的缩进距离
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.iconTheme": "material-icon-theme", // 工作区主题
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.editor.highlightModifiedTabs": false, // 更新的文件的选项卡顶部有变色
+  "workbench.editor.closeOnFileDelete": true, // vscode的编辑器主题
+  "explorer.confirmDelete": true, // 删除文件时候确认框
+  "explorer.confirmDragAndDrop": true, // 拖动文件时提示确认框
+  "explorer.sortOrder": "type", // 左侧文件树排列方式
+  "explorer.compactFolders": false, // 紧凑呈现单个子文件
+  "files.trimTrailingWhitespace": true, // 保存时删除句末的空格
+  "files.insertFinalNewline": true, // 文件最终行插入一行
+  "files.associations": {
+    // 小程序语法检测
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.wpy": "vue"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "prompt", // 文件移动时，弹出提示框
+
+  // tab展开emmet缩写
+  "emmet.triggerExpansionOnTab": true,
+  // "emmet.syntaxProfiles": {
+  //   "vue-html": "html",
+  //   "vue": "html"
+  // },
+  "emmet.includeLanguages": {
+    "wxml": "html" // 设置小程序的wxml可以使用html规则
+  },
+
+  // * terminal
+  "terminal.explorerKind": "integrated", // 使用vscode的继承终端
+  "terminal.integrated.cursorBlinking": true, // 终端内部的光标闪烁
+  "terminal.integrated.fontFamily": "YaHei Fira Icon Hybrid", // 终端字体
+  "terminal.integrated.enableBell": true, // 终端铃声提醒
+  "terminal.integrated.fontSize": 14, // 终端字体大小
+  "search.showLineNumbers": true, // 显示搜索结果的所在行数
+  "search.followSymlinks": false, // 不消失跟踪符号链接
+
+  // * Better Comments - 注释加颜色
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#e4393c", // 京东
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "#",
+      "color": "#5299F5", // 支付宝
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "_",
+      "color": "#529F50", // 微信
+      "strikethrough": false
+    },
+    {
+      "tag": "TODO",
+      "color": "#ffe304", // 皮卡丘
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#666666", // 阴天
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    }
+  ],
+
+  // * 默认的文件处理 ( 代码格式 )
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[less]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }, // tabSize = 4
+
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true, // 粘贴时是否自动格式化
+  "editor.formatOnSave": true, // 保存时格式化
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true }, // 每次保存使用eslint检测
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
+
+  // * eslint设置
+  "eslint.codeAction.showDocumentation": { "enable": true },
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+
+  // "eslint.options": {
+  //   "plugins": ["html"]
+  // },
+
+  // # prettier 全局配置
+  "prettier.printWidth": 90, // 超过最大值换行
+  "prettier.tabWidth": 2, // 缩进字节数
+  "prettier.useTabs": false, // 缩进不使用tab，使用空格
+  "prettier.semi": false, // 句尾添加分号
+  "prettier.singleQuote": true, // 使用单引号代替双引号
+  "prettier.proseWrap": "preserve", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+  "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+  "prettier.endOfLine": "lf", // 结尾是 \n \r \n\r auto
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+  "prettier.jsxBracketSameLine": false, // 在jsx中把'>' 是否单独放一行
+  "prettier.jsxSingleQuote": true, // 在jsx中使用单引号代替双引号
+  "prettier.requireConfig": false, // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+  "prettier.quoteProps": "preserve", // 不格式化vue文件，vue文件的格式化单独设置
+  "prettier.trailingComma": "none",
+
+  // * vue文件格式化 vetur（使用prettier）
+  "vetur.format.options.tabSize": 2, // 設置格式化的tabsize
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "end_with_newline": true,
+      "printWidth": 160,
+      "singleQuote": true, // 使用单引号
+      "semi": false, // 末尾使用分号
+      "tabWidth": 2,
+      "arrowParens": "avoid",
+      "bracketSpacing": true,
+      "proseWrap": "preserve", // 代码超出是否要换行 preserve保留
+      "trailingComma": "none" // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+    }
+    // "js-beautify-html": {
+    //   "end_with_newline": true,
+    //   "wrap_attributes": "force-aligned",
+    //   "indent_size": 2
+    // },
+    // "js-beautify-css": {
+    //   "end_with_newline": true,
+    //   "indent_size": 2
+    // },
+    // "prettyjs": {
+    //   "end_with_newline": true,
+    //   "printWidth": 100,
+    //   "singleQuote": false,
+    //   "wrapAttributes": false,
+    //   "sortAttributes": true,
+    //   "semi": false, // 末尾使用分号
+    //   "tabWidth": 2
+    // },
+    // "prettycss": {
+    //   "end_with_newline": true,
+    //   "printWidth": 100,
+    //   "singleQuote": false,
+    //   "wrapAttributes": false,
+    //   "sortAttributes": true,
+    //   "tabWidth": 2
+    // }
+  },
+
+  // * turboConsoleLog console插件
+  "turboConsoleLog.wrapLogMessage": false,
+  "turboConsoleLog.logMessagePrefix": "🍔",
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.insertEnclosingClass": true,
+  "turboConsoleLog.insertEnclosingFunction": true,
+  "turboConsoleLog.quote": "'",
+
+  // * liveServer 本地起服务 - 端口默认5500 还可以是否使用https
+  "liveServer.settings.host": "172.20.10.4",
+
+  // * Path Intellisense 路径提示
+  "path-intellisense.mappings": { "@": "${workspaceRoot}/src" }, // 设置@符匹配目录下的src目录
+
+  /**
+   * GitLens的配置
+   */
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+    // "suppressShowKeyBindingsNotice": true,
+    // "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "chorded",
+
+  // * leetcode配置
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.defaultLanguage": "javascript",
+  // "leetcode.nodePath": "/usr/local/bin/node",
+
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.tsc.autoDetect": "off",
+  "git.enableSmartCommit": true,
+
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "projectManager.git.baseFolders": [],
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2V9In0=",
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "vetur.validation.template": false,
+  "minapp-vscode.disableAutoConfig": true
+}
